@@ -1,7 +1,13 @@
+let jj;
+
+function preload(){
+  jj = loadImage("jj.png");
+}
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(jj.width,jj.height);
 }
 
 function draw() {
-  background(220);
+  image(jj, 0, 0);
 }
