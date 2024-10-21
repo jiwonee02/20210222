@@ -1,13 +1,17 @@
 let jj;
 
-function preload(){
+function preload() {
   jj = loadImage("jj.png");
 }
 
 function setup() {
-  createCanvas(jj.width,jj.height);
+  createCanvas(jj.width, jj.height);
 }
 
 function draw() {
   image(jj, 0, 0);
+
+  if (mouseIsPressed === true) {
+    console.log(mouseX, mouseY);
+  }
 }
